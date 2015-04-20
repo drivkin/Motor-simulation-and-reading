@@ -1,0 +1,29 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="2,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> [ <span class="var type1" id="S2T4U3">theta</span> ] = getThetaFromHalls( <span class="var type1" id="S3T3U6">halls</span> )</span></span>
+<span class="srcline"><span class="lineno"><a href="2,2" id="srcline2"> 2</a></span><span class="line"><span class="comment">%UNTITLED2 Summary of this function goes here</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%halls is an array of 3 halls states [halla hallb hallc]</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">%theta is the position of the rotor at the time of transition to the hall</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,5" id="srcline5"> 5</a></span><span class="line"><span class="comment">%state if the motor is spinning in the positive theta direction. </span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,6" id="srcline6"> 6</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="2,7" id="srcline7"> 7</a></span><span class="line"><span class="var type0" id="S4T0U9">hlstr</span> = [ <span class="message fatal" id="M2F2C">num2str</span>(<span class="var type1" id="S3T3U15">halls</span>(1)) num2str(<span class="var type2" id="S3T0U20">halls</span>(2)) num2str(<span class="var type2" id="S3T0U25">halls</span>(3))]</span></span>
+<span class="srcline"><span class="lineno"><a href="2,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="2,9" id="srcline9"> 9</a></span><span class="line"><span class="keyword">switch</span> <span class="var type0" id="S4T0U28">hlstr</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,10" id="srcline10">10</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'100'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,11" id="srcline11">11</a></span><span class="line">        <span class="var type2" id="S2T0U33">theta</span> = 0;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,12" id="srcline12">12</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'110'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,13" id="srcline13">13</a></span><span class="line">        <span class="var type2" id="S2T0U39">theta</span> = 2*pi/6;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,14" id="srcline14">14</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'010'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,15" id="srcline15">15</a></span><span class="line">        <span class="var type2" id="S2T0U50">theta</span> = 4*pi/6;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,16" id="srcline16">16</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'011'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,17" id="srcline17">17</a></span><span class="line">        <span class="var type2" id="S2T0U61">theta</span> = pi;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,18" id="srcline18">18</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'001'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,19" id="srcline19">19</a></span><span class="line">        <span class="var type2" id="S2T0U68">theta</span> = 8*pi/6;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,20" id="srcline20">20</a></span><span class="line">    <span class="keyword">case</span> <span class="string">'101'</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,21" id="srcline21">21</a></span><span class="line">        <span class="var type2" id="S2T0U79">theta</span> = 10*pi/6;     </span></span>
+<span class="srcline"><span class="lineno"><a href="2,22" id="srcline22">22</a></span><span class="line">    <span class="keyword">otherwise</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,23" id="srcline23">23</a></span><span class="line">        <span class="var type2" id="S2T0U89">theta</span> =100;</span></span>
+<span class="srcline"><span class="lineno"><a href="2,24" id="srcline24">24</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,25" id="srcline25">25</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="2,26" id="srcline26">26</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="2,27" id="srcline27">27</a></span><span class="line"></span></span>
+</pre>
